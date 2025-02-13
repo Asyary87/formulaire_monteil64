@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande en ligne</title>
+</head>
+<body>
+
+    <h1>Commande en ligne</h1>
+
+    <form action="#" method="post">
+        
+        <!-- Etat Civil -->
+        <fieldset>
+            <fieldset>
+                <legend>État Civil</legend>
+                
+                <label for="civilite_mlle">Civilité :</label><br>
+            
+                <input type="radio" id="civilite_mlle" name="civilite" value="mlle">
+                <label for="civilite_mlle">Mlle</label>
+            
+                <input type="radio" id="civilite_madame" name="civilite" value="madame">
+                <label for="civilite_madame">Madame</label>
+            
+                <input type="radio" id="civilite_monsieur" name="civilite" value="monsieur">
+                <label for="civilite_monsieur">M</label>
+            
+            </fieldset>
+            
+        </fieldset>
+
+        <!-- Adresse de facturation -->
+        <fieldset>
+            <legend>Adresse de facturation</legend>
+
+            <label for="adresse_facturation">Adresse :</label><br>
+            <textarea id="adresse_facturation" name="adresse_facturation"></textarea><br><br>
+
+            <label for="ville_facturation">Ville :</label>
+            <input type="text" id="ville_facturation" name="ville_facturation"><br><br>
+
+            <label for="code_postal_facturation">Code postal :</label>
+            <input type="text" id="code_postal_facturation" name="code_postal_facturation"><br><br>
+
+            <label for="pays_facturation">Pays :</label>
+            <select id="pays_facturation" name="pays_facturation">
+                <option value="">Choisissez un pays</option>
+                <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+            </select>
+
+        </fieldset>
+
+        <!-- Adresse de livraison -->
+        <fieldset>
+            <legend>Adresse de livraison</legend>
+
+            <label for="adresse_livraison">Adresse :</label><br>
+            <textarea id="adresse_livraison" name="adresse_livraison"></textarea><br><br>
+
+            <label for="ville_livraison">Ville :</label>
+            <input type="text" id="ville_livraison" name="ville_livraison"><br><br>
+
+            <label for="code_postal_livraison">Code postal :</label>
+            <input type="text" id="code_postal_livraison" name="code_postal_livraison"><br><br>
+
+            <label for="pays_livraison">Pays :</label>
+            <select id="pays_livraison" name="pays_livraison">
+                <option value="">Choisissez un pays</option>
+                <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+        <button type="submit">Envoyer</button>
+
+    </form>
+
+</body>
+</html>
